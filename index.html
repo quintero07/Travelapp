@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de viajes</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- SwiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-compass"></i> Viajes.</a>
+        <nav class="navbar">
+            <div class="fas fa-times" id="nav-close"></div>
+            <a href="./index.html">Inicio</a>
+            <a href="./paginas/categorias.html">Destinos</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+    </header>
+    <!-- Buscador -->
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" id="search-box" placeholder="Buscar destino">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+    <!-- Home -->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(./assets/imagenes/landing3.png) no-repeat;">
+                        <div class="content">
+                            <span>El mundo es</span>
+                            <h3>Increíble</h3>
+                            <p>Para viajar solo por internet, planifica tu próxima escapada</p>
+                            <a href="#" class="btn">Comencemos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(./assets/imagenes/landing2.jpg) no-repeat;">
+                        <div class="content">
+                            <span>Arma tu propio tour</span>
+                            <h3>Conoce</h3>
+                            <p>Nuestra distintas actividades disponibles</p>
+                            <a href="#" class="btn">Comencemos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(./assets/imagenes/landing4.png) no-repeat;">
+                        <div class="content">
+                            <span>Explora</span>
+                            <h3>un nuevo mundo</h3>
+                            <p>El momento es ahora de conectar con la naturaleza</p>
+                            <a href="#" class="btn">Comencemos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev "></div>
+        </div>
+    </section>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Mi script -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

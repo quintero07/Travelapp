@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de viajes</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SwiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <a href="../index.html" class="logo"><i class="fas fa-compass"></i> Viajes.</a>
+        <nav class="navbar">
+            <div class="fas fa-times" id="nav-close"></div>
+            <a href="../index.html">Inicio</a>
+            <a href="./categorias.html">Destinos</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+    </header>
+    <!-- Buscador -->
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+            <input type="search" name="" id="search-box" placeholder="Buscar destino">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+    <!-- Categorias -->
+    <section class="category">
+        <h1 class="heading">Destinos</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="../assets/imagenes/mendoza.jpg" alt="categoria 1">
+                <h3>Mendoza</h3>
+                <p>Corazón de la zona vitivinícola argentina, famosa por sus Malbecs y otros vinos tintos. Sus distintas bodegas ofrecen degustaciones y visitas guiadas.</p>
+                <a href="" class="btn">Ver mas</a>
+            </div>
+            <div class="box">
+                <img src="../assets/imagenes/bariloche.jpg" alt="categoria 1">
+                <h3>Bariloche</h3>
+                <p>Bariloche es una ciudad en la región de la Patagonia argentina. Limita con Nahuel Huapi, un gran lago glacial rodeado de los Andes. Bariloche es conocida por su chocolate.</p>
+                <a href="" class="btn">Ver mas</a>
+            </div>
+            <div class="box">
+                <img src="../assets/imagenes/iguazu.jpg" alt="categoria 1">
+                <h3>Iguazú</h3>
+                <p>Puerto Iguazú es una ciudad de la provincia de Misiones, en el nordeste de Argentina. Esta localidad se encuentra las cataratas del Iguazú, una de las Siete maravillas naturales del mundo.</p>
+                <a href="" class="btn">Ver mas</a>
+            </div>
+            <div class="box">
+                <img src="../assets/imagenes/calafate.jpg" alt="categoria 1">
+                <h3>Calafate</h3>
+                <p>Es una ciudad cerca del borde del Campo de Hielo Patagónico Sur en la provincia argentina de Santa Cruz. Es conocida principalmente por los glaciares</p>
+                <a href="" class="btn">Ver mas</a>
+            </div>
+        </div>
+    </section>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Mi script -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

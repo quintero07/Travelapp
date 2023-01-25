@@ -1,0 +1,84 @@
+@media (max-width:1200px) {
+  .header {
+    padding: 2rem;
+  }
+  section{
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+  .home .box{
+    padding: 2rem;
+    justify-content: center;
+    background-position: right !important;
+  
+    &.second{
+      justify-content: center;
+      background-position: left !important;
+    }
+    .content{
+      text-align: center;
+
+      span{
+        font-size: 3rem;
+      }
+      h3{
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+// Menu lateral para dispositivos mobiles
+@media (max-width:768px) {
+  .header {
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: $white;
+      z-index: 1000;
+      width: 35rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        left: 0;
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, .8);
+      }
+
+      a {
+        margin: 1rem 0;
+        font-size: 3rem;
+      }
+
+      #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+      }
+    }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    display: none;
+  }
+}
+
+@media (max-width:450px) {
+  html {
+    font-size: 50%;
+  }
+}

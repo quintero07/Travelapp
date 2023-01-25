@@ -1,0 +1,36 @@
+.category{
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+    }
+    .box-container{
+
+        @include grid(20rem);
+
+        .box{
+            flex-flow: column;
+            text-align: center;
+            padding: 1rem;
+            // margin-top: -30rem;
+            // max-height: fit-content;
+        }
+        img{
+            height: 25rem;
+            width: 25rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        h3{
+            font-size: 2rem;
+            color: $green;
+        }
+        p{
+            font-size: 1.6rem;
+            color: $black;
+            padding: 1rem 0;
+            line-height: 2;
+        }
+    }
+}
