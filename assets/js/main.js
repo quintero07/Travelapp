@@ -28,8 +28,23 @@ document.querySelector('#close-search').onclick = () => {
 let swiper = new Swiper('.home-slider', {
     loop: true,
     grabCursor:true,
+    speed: 5000,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    autoplay: {
+        enabled: true
+    }
 });
+
+const sl = new Swiper(slider, {
+    slidesPerView: 'auto',
+    loop: true,
+    speed: 5000,
+    slidesPerView: '2',
+    autoplay: {
+      enabled: true,
+      delay: 5000,
+    },
+  });
